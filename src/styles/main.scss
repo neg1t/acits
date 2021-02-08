@@ -1,0 +1,24 @@
+@import './fonts.scss';
+@import './modules/animal.module.scss';
+@import './variables.scss';
+
+* {
+  font-size: 16px;
+  font-family: RobotoRegular;
+}
+body {
+  background-color: $body_background_color;
+
+}
+h1 {
+  font-size: $h1;
+}
+
+.loading {
+  font-size: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1350px;
+}

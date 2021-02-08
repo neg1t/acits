@@ -1,0 +1,60 @@
+@import '../variables.scss';
+#blink5 {
+  -webkit-animation: blink 4s linear infinite;
+  animation: blink 4s linear infinite;
+}
+@-webkit-keyframes blink {
+  0% { color: rgb(148, 0, 0); }
+  15% { color: rgb(101, 112, 2); }
+  30% { color: rgb(35, 124, 0); }
+  45% { color: rgb(0, 109, 81); }
+  60% { color: rgb(0, 45, 104); }
+  75% { color: rgb(72, 0, 114); }
+  90% { color: rgb(116, 0, 81); }
+  100% { color: rgb(128, 0, 11); }
+}
+@keyframes blink {
+  0% { color: rgb(148, 0, 0); }
+  15% { color: rgb(101, 112, 2); }
+  30% { color: rgb(35, 124, 0); }
+  45% { color: rgb(0, 109, 81); }
+  60% { color: rgb(0, 45, 104); }
+  75% { color: rgb(72, 0, 114); }
+  90% { color: rgb(116, 0, 81); }
+  100% { color: rgb(128, 0, 11); }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color_blue;
+  span {
+    padding-left: 20px;
+    font-size: 24px;
+    text-shadow: 0 0 2px black;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10vw;
+    li {
+      list-style: none;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      a {
+        text-decoration: none;
+        // color: $black;
+        -webkit-animation: blink 4s linear infinite;
+        animation: blink 4s linear infinite;
+        font-size: 18px;
+        
+      }
+      &:first-child{
+        padding-right: 30px;
+      }
+    }
+  }
+}

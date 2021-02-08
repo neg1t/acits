@@ -1,0 +1,42 @@
+@import '../variables.scss';
+
+.auth {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 25vh;
+  width: 20vw;
+  height: 50vh;
+  background-color: rgb(141, 141, 255);
+  border-radius: 18px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  input {
+    height: 28px;
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    height: 30px;
+    background-color: rgb(113, 234, 255);
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 0 0 15px rgb(44, 44, 255);
+    }
+  }
+}

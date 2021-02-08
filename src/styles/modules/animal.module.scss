@@ -1,0 +1,20 @@
+@import '../variables.scss';
+
+.animal {
+  border-collapse: collapse;
+  border-spacing: 0;
+  thead th {
+    background-color: $color_blue;
+    border: solid 1px $color_white_blue;
+    color: $black;
+    padding: 8px;
+    min-width: 110px;
+    text-align: left;
+  }
+  tbody td {
+    border: solid 1px $color_white_blue;
+    color: $black;
+    padding: 10px;
+    font-size: $tables_tbody;
+  }
+}

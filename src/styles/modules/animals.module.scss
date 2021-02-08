@@ -1,0 +1,31 @@
+@import '../variables.scss';
+@import '../main.scss';
+
+.animals {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    thead th {
+      color: $black;
+      font-size: $tables_thead;
+      padding: 8px 8px 8px 3px;
+      min-width: 12vw;
+      text-align: left;
+    }
+    tbody td {
+      font-size: $tables_tbody;
+      color: $black;
+      padding: 10px 10px 10px 4px;
+    }
+    tbody tr {
+      background-color: $background_color_tr;
+      border: solid 5px $body_background_color;
+      transition: 0.1s;
+      &:hover {
+        transform: skew(-5deg, 0) scale(1.01);
+        box-shadow: 0 0 10px $background_color_tr;
+        cursor: pointer;
+      }
+    }
+  }
+}
